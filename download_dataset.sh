@@ -9,7 +9,7 @@ cd data
 URL="https://huggingface.co/datasets/commaai/commaSteeringControl/resolve/main/data/SYNTHETIC_V0.zip"
 
 echo "Downloading dataset from $URL"
-wget "$URL"
+# curl -o "${URL##*/}" "$URL"
 
 ZIP_FILE="${URL##*/}"
 
